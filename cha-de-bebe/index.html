@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chá de Bebê - João Vicente</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Figurinhas flutuantes -->
+    <div class="sticker s1">🧸</div>
+    <div class="sticker s2">🍼</div>
+    <div class="sticker s3">🐣</div>
+    <div class="sticker s4">🎈</div>
+    <div class="sticker s5">👣</div>
+    <div class="sticker s6">👶</div>
+    <div class="sticker s7">⭐</div>
+
     <div class="container">
         <header>
             <h1>Chá de Bebê</h1>
@@ -26,7 +35,7 @@
                 </div>
 
                 <div class="actions">
-                    <a href="#" class="btn registry">Lista de Presentes</a>
+                    <a href="#" class="btn registry">Lista de Presentes 🎁</a>
                 </div>
             </div>
         </section>
@@ -44,13 +53,12 @@
     </div>
 
     <script>
-        // Lógica para abrir e fechar a janelinha (modal) de presentes
         var modal = document.getElementById("giftModal");
         var btn = document.querySelector(".registry");
         var span = document.getElementsByClassName("close")[0];
 
         btn.onclick = function(e) {
-            e.preventDefault(); // Evita que a página role para o topo
+            e.preventDefault();
             modal.style.display = "block";
         }
 
